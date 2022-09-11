@@ -1,0 +1,14 @@
+button {
+  color: white;
+  // background-color: rgba(13, 189, 189, 1);
+  background: lightgray;
+  border: none;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+  cursor: not-allowed;
+}
+
+.enabled {
+  cursor: pointer;
+  background-color: rgba(13, 189, 189, 1);
+}
