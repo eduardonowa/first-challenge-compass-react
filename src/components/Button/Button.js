@@ -8,6 +8,7 @@ const Button = ({ textButton, ...props }) => {
       className={props.classButton}
       onClick={props.onClick}
       disabled={props.disabled}
+      data-testid="button-component"
     >
       {textButton}
     </button>

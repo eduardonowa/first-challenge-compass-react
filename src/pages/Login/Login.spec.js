@@ -31,7 +31,16 @@ describe("Testing Login.js", () => {
       </Router>
     );
     const inputsComponents = screen.getAllByTestId("inputs-components");
-    expect(inputsComponents).toHaveLength(5);
+    expect(inputsComponents).toHaveLength(4);
+  });
+  it("should be able to show the maskedInput component", () => {
+    render(
+      <Router>
+        <Login />
+      </Router>
+    );
+    const inputsComponents = screen.getByTestId("maskedInput-component");
+    expect(inputsComponents).toBeInTheDocument();
   });
   it("should be able to show the image component in the right amount", () => {
     render(
